@@ -1,0 +1,20 @@
+.banner {
+  height: 100vh;
+  background-image: url('../../../public/images/banner-background.png');
+  color: #fff;
+
+  &Header {
+    text-align: center;
+    font-size: 8vw;
+    margin: 0;
+    padding-top: 160px;
+  }
+
+  &PullDown {
+  }
+}
+
+.pullDown {
+  &pullDownText {
+  }
+}

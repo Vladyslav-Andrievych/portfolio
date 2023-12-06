@@ -1,6 +1,9 @@
 @import '../../styles/variables.scss';
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 70px;
   width: 100%;
   display: flex;
@@ -8,7 +11,8 @@
   justify-content: space-between;
   background-color: $primary-black;
   color: $primary-white;
-  opacity: 90%;
+  border-bottom: 1px solid $primary-white;
+  opacity: 80%;
   padding: 0 15px;
 
   &Logo {
