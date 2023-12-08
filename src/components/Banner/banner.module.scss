@@ -1,20 +1,57 @@
 .banner {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url('../../../public/images/banner-background.png');
   color: #fff;
+  padding: 0 5px 30px;
 
   &Header {
     text-align: center;
-    font-size: 8vw;
+    font-size: 50px;
     margin: 0;
-    padding-top: 160px;
-  }
-
-  &PullDown {
+    padding-top: 125px;
   }
 }
 
-.pullDown {
-  &pullDownText {
+.prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+
+  &Text {
+    font-size: 18px;
+    color: #bcbcbc;
+  }
+}
+
+.arrowsDown {
+  margin-top: 5px;
+
+  .arrow:last-child {
+    margin-top: 5px;
+  }
+}
+
+.arrow {
+  display: flex;
+
+  &Line {
+    width: 50px;
+    height: 5px;
+    background-color: #bcbcbc;
+
+    &:first-child {
+      transform: rotate(20deg) translate(2px);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      transform: rotate(-20deg) translate(-2px);
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
   }
 }
