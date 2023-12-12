@@ -1,5 +1,8 @@
 import styles from './techstack.module.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
+
 export default function TechCategory({
   categoryName,
   items,
@@ -15,6 +18,10 @@ export default function TechCategory({
           //change key property value to id
           return (
             <li key={index} className={styles.techCategoryItem}>
+              <FontAwesomeIcon
+                icon={faCheck}
+                className={styles.techCategoryItemIcon}
+              />
               {value}
             </li>
           );
