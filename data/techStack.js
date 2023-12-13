@@ -16,6 +16,7 @@ const data = {
     'Redux DevTools',
     'Figma',
     'Git',
+    'Bash',
   ],
   frameworks: ['Next.js'],
   'currently learning': ['TypeScript'],
