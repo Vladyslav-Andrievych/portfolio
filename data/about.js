@@ -1,5 +1,6 @@
 //add LinkedIn ...
 //add courses property
+//just like in About.tsx file
 
 const data = {
   sex: 'Male',

@@ -13,6 +13,7 @@ const data = {
     'Webpack',
     'Babel',
     'ESList',
+    'Jest',
     'Redux DevTools',
     'Figma',
     'Git',
