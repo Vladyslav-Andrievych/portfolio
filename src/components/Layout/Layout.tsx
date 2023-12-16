@@ -35,7 +35,7 @@ export default function Layout({
           />
         </header>
         <main>{children}</main>
-        <footer className={styles.footer}></footer>
+        <footer className={styles.footer}>Made by Vlad Andrievych</footer>
       </div>
     </>
   );

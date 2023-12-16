@@ -25,37 +25,42 @@ export default function About() {
       <h2 className={styles.aboutTitle}>About</h2>
       <div className={`${styles.aboutDescription} ${styles.description}`}>
         <ul className={styles.descriptionList}>
-          <DescriptionListItem property="sex" value={aboutInfo.sex}>
+          {/* maybe make icon name part of data and 
+          use here .map() instead of typing*/}
+          <DescriptionListItem property="sex:" value={aboutInfo.sex}>
             <FontAwesomeIcon
               icon={faVenusMars}
               className={styles.descriptionItemIcon}
             />
           </DescriptionListItem>
-          <DescriptionListItem property="name" value={aboutInfo.name}>
+          <DescriptionListItem property="name:" value={aboutInfo.name}>
             <FontAwesomeIcon
               icon={faUser}
               className={styles.descriptionItemIcon}
             />
           </DescriptionListItem>
-          <DescriptionListItem property="location" value={aboutInfo.location}>
+          <DescriptionListItem property="location:" value={aboutInfo.location}>
             <FontAwesomeIcon
               icon={faLocationDot}
               className={styles.descriptionItemIcon}
             />
           </DescriptionListItem>
-          <DescriptionListItem property="email" value={aboutInfo.email}>
+          <DescriptionListItem property="email:" value={aboutInfo.email}>
             <FontAwesomeIcon
               icon={faEnvelope}
               className={styles.descriptionItemIcon}
             />
           </DescriptionListItem>
-          <DescriptionListItem property="github" value={aboutInfo.github}>
+          <DescriptionListItem property="github:" value={aboutInfo.github}>
             <FontAwesomeIcon
               icon={faCodeMerge}
               className={styles.descriptionItemIcon}
             />
           </DescriptionListItem>
-          <DescriptionListItem property="education" value={aboutInfo.education}>
+          <DescriptionListItem
+            property="education:"
+            value={aboutInfo.education}
+          >
             <FontAwesomeIcon
               icon={faGraduationCap}
               className={styles.descriptionItemIcon}

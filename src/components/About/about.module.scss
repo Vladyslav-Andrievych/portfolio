@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .about {
   padding: 0 15px 30px;
 
@@ -16,17 +18,36 @@
 }
 
 .description {
+  max-width: 380px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75),
+    -4px -4px 10px 0px rgba(0, 0, 0, 0.75);
+
   &List {
+    font-size: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   &Item {
+    color: #6f6d6d;
+    margin-top: 5px;
+
     &Icon {
+      font-size: 13px;
+      margin-right: 4px;
     }
 
     &Property {
+      font-size: 14px;
+      margin-right: 5px;
     }
 
     &Value {
+      color: $primary-black;
+      text-decoration: underline;
     }
   }
 }
