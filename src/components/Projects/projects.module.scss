@@ -1,0 +1,78 @@
+@import '../../styles/variables.scss';
+
+.projects {
+  color: $primary-white;
+  background-color: $primary-black;
+  padding: 30px 15px 30px;
+
+  &Title {
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  &Description {
+    font-size: 14px;
+    text-align: center;
+    color: #6f6d6d;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  &CardsContainer {
+    margin-top: 30px;
+  }
+}
+
+.projectCards {
+}
+
+.projectCard {
+  //remove margin below
+  margin: 30px auto 0;
+
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-white;
+  border-radius: 8px;
+  color: $primary-black;
+  padding: 35px 10px 10px;
+  box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.75),
+    -4px -4px 10px 0px rgba(255, 255, 255, 0.75);
+
+  &Title {
+    font-size: 18px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  &Description {
+    //try something with text-overflow
+    // or add border-bottom
+    max-height: 82px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    color: #6f6d6d;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  &Link {
+    height: 35px;
+    background-color: #1985e4;
+    color: #fff;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-top: auto;
+  }
+}
