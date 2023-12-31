@@ -20,18 +20,70 @@
     margin-top: 15px;
   }
 
-  &CardsContainer {
+  &Slider {
     margin-top: 30px;
   }
 }
 
-.projectCards {
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &Counter {
+    font-size: 14px;
+    color: #6f6d6d;
+    text-decoration: underline;
+  }
+
+  &Cards {
+    position: relative;
+  }
+
+  &ToggleBtn {
+    position: absolute;
+    top: 105px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #000000b3;
+    color: $primary-white;
+    z-index: 1;
+
+    &Right {
+      right: 40px;
+    }
+
+    &Left {
+      left: 40px;
+    }
+  }
+}
+
+.projectCardsContainer {
+  display: flex;
+  align-items: center;
+  max-width: 380px;
+  height: 312px;
+  overflow: hidden;
+}
+
+.projectCardsList {
+  width: fit-content;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &Item {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
 }
 
 .projectCard {
-  //remove margin below
-  margin: 30px auto 0;
-
   width: 200px;
   height: 250px;
   display: flex;

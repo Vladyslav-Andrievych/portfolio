@@ -2,24 +2,38 @@ import styles from './projects.module.scss';
 
 import Link from 'next/link';
 
-export default function ProjectCard({
-  name,
-  description,
-  layoutDesciption,
-}: {
+interface ProjectData {
   name: string;
   description: string;
-  layoutDesciption: string;
+  repositoryName: string;
+  layout: string;
+  repositoryUrl: string;
+  url: string;
+  techStack: string[];
+}
+
+export default function ProjectCard({
+  projectData,
+  isActive,
+}: {
+  projectData: ProjectData;
+  isActive: boolean;
 }) {
   return (
-    <div className={styles.projectCard}>
-      <h4 className={styles.projectCardTitle}>{name}</h4>
+    <li
+      className={`
+                ${styles.projectCardsListItem} 
+                ${styles.projectCard}
+                `}
+      style={isActive ? { transform: 'translate(0, -20px)' } : {}}
+    >
+      <h4 className={styles.projectCardTitle}>{projectData.name}</h4>
       <p className={styles.projectCardDescription}>
-        {`${description}. ${layoutDesciption}`}
+        {`${projectData.description}. ${projectData.layout}`}
       </p>
       <Link href="/" className={styles.projectCardLink}>
         See more
       </Link>
-    </div>
+    </li>
   );
 }

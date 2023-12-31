@@ -2,7 +2,7 @@ import styles from './projects.module.scss';
 
 import data from '../../../data/projects';
 
-import ProjectCards from './ProjectCards';
+import ProjectsSlider from './ProjectsSlider';
 
 export default function Projects() {
   const projectsInfo = [...data];
@@ -14,7 +14,7 @@ export default function Projects() {
         I worked on these projects while studying at an online university
       </p>
       {/* add this Portfolio, TodoList, js-full-github-user-data, counter-project */}
-      <ProjectCards projectsInfo={[...projectsInfo]} />
+      <ProjectsSlider projectsInfo={[...projectsInfo]} />
     </section>
   );
 }
